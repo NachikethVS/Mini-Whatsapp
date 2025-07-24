@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e5ddd5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    padding: 16px;
+    margin: 0;
+    background-color: #075E54;
+    color: white;
+    font-size: 1.4em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1ebf5b;
+}
+
+.chat {
+    background-color: #dcf8c6;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.msg {
+    background-color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    position: relative;
+    font-size: 0.95em;
+    line-height: 1.4em;
+}
+
+.msg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 8px solid transparent;
+    border-top-color: #ffffff;
+    margin-right: 12px;
+    margin-bottom: -8px;
+}
+
+.chat p {
+    margin: 4px 0;
+    font-size: 0.9em;
+    color: #444;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+/* Timestamp formatting */
+.chat p:last-child {
+    font-size: 0.75em;
+    text-align: right;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .chat {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    form button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
